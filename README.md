@@ -16,8 +16,11 @@ The Decazon contract includes the following features:
 The Decazon contract includes the following state variables:
 
 owner: the address of the contract owner
+
 items: a mapping of Item structs, where each item is identified by its id
+
 orderCount: a mapping of the number of orders placed by each user, identified by their address
+
 orders: a mapping of Order structs, where each order is identified by the user's address and order number
 The contract includes the following structs:
 
@@ -35,7 +38,9 @@ item: an Item struct representing the product ordered
 The contract includes the following functions:
 
 `list()`: a function for listing products for sale, which can only be called by the contract owner
+
 `buy()`: a function for buying products, which requires the buyer to send cryptocurrency, checks that the buyer has sent enough cryptocurrency and that the product is in stock, creates an order, and emits a Buy event
+
 `withdraw()`: a function for withdrawing cryptocurrency from the contract, which can only be called by the contract owner
 The contract also includes the following events:
 
