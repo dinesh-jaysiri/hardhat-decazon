@@ -1,0 +1,19 @@
+{
+  "name": "hardhat-decazon",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "seeds":"npx hardhat run scripts/seed.js --network localhost",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^2.0.1",
+    "dotenv": "^16.0.3",
+    "hardhat": "^2.12.6",
+    "hardhat-deploy": "^0.11.22"
+  }
+}
